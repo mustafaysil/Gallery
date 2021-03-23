@@ -118,7 +118,7 @@ class GridView: UIView {
     let button = UIButton(type: .custom)
     button.setImage(GalleryBundle.image("gallery_close")?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
     button.tintColor = Config.Grid.CloseButton.tintColor
-
+    button.isHidden = Config.Grid.CloseButton.isHidden
     return button
   }
 
